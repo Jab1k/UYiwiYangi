@@ -7,7 +7,7 @@ import '../weidget.dart/item.dart';
 
 class WeathersHome extends StatefulWidget {
   final String name;
-  WeathersHome({Key? key, this.name = 'Moscow'}) : super(key: key);
+  const WeathersHome({Key? key, this.name = 'Moscow'}) : super(key: key);
   @override
   State<WeathersHome> createState() => _WeathersHomeState();
 }
@@ -209,7 +209,7 @@ class _WeathersHomeState extends State<WeathersHome> {
                                                   );
                                                 }),
                                           ),
-                                          Spacer(),
+                                          const Spacer(),
                                           Center(
                                               child: Stack(
                                             children: [
@@ -227,7 +227,7 @@ class _WeathersHomeState extends State<WeathersHome> {
                                                   width: 50,
                                                 ),
                                               ),
-                                              Spacer(),
+                                              const Spacer(),
                                               Padding(
                                                 padding: const EdgeInsets.only(
                                                     left: 80),
@@ -245,17 +245,17 @@ class _WeathersHomeState extends State<WeathersHome> {
                                                     Navigator.push(context,
                                                         MaterialPageRoute(
                                                             builder: (_) {
-                                                      return MyWidget();
+                                                      return const MyWidget();
                                                     }));
                                                   },
                                                   child: Container(
                                                     width: 64,
                                                     height: 64,
-                                                    decoration: BoxDecoration(
+                                                    decoration: const BoxDecoration(
                                                       shape: BoxShape.circle,
                                                       color: Color(0xffF5F5F9),
                                                     ),
-                                                    child: Center(
+                                                    child: const Center(
                                                       child: Icon(
                                                         Icons.add,
                                                         size: 50,
